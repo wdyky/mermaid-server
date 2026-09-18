@@ -1,0 +1,41 @@
+{
+  "name": "pi-mermaid-server",
+  "version": "0.1.0",
+  "description": "Mermaid diagram editor + live preview for the pi coding agent: tabbed, file-backed, served by a bundled local HTTP server (100% offline).",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "pi-package",
+    "pi",
+    "mermaid",
+    "diagrams",
+    "extension",
+    "editor"
+  ],
+  "pi": {
+    "extensions": [
+      "./index.js"
+    ]
+  },
+  "files": [
+    "index.js",
+    "server",
+    "README.md",
+    "LICENSE"
+  ],
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*",
+    "typebox": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    },
+    "typebox": {
+      "optional": true
+    }
+  }
+}
