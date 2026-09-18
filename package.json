@@ -1,0 +1,50 @@
+{
+  "name": "mermaid-server",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -n server,web -c blue,green \"tsx server/index.ts\" \"vite\"",
+    "build": "tsc -b && vite build",
+    "bundle": "node scripts/bundle.mjs",
+    "ship": "node scripts/ship.mjs",
+    "start": "tsx server/index.ts",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "express": "^5.2.1",
+    "hammerjs": "^2.0.8",
+    "jsdom": "^30.0.1",
+    "lucide-react": "^1.33.0",
+    "mermaid": "^11.17.0",
+    "monaco-editor": "^0.56.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "sonner": "^2.0.8",
+    "svg-pan-zoom": "^3.6.2"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/express": "^5.0.6",
+    "@types/hammerjs": "^2.0.46",
+    "@types/jsdom": "^30.0.0",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.4",
+    "concurrently": "^10.0.5",
+    "esbuild": "^0.28.2",
+    "eslint": "^10.8.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.3",
+    "globals": "^17.7.0",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.12",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.65.0",
+    "vite": "^8.2.0"
+  },
+  "description": "Local-first mermaid diagram editor: React SPA + a small Node HTTP server that reads and writes plain files (100% offline)."
+}

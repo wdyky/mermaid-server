@@ -1,0 +1,12 @@
+node_modules/
+dist/
+bundle/
+
+# local config (see .env.example)
+.env
+.npmrc
+
+# logs / editor / os
+*.log
+.DS_Store
+.vscode/
